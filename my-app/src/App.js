@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+import Particles from 'react-particles';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
+        <p>Hello everyone</p>
+
+
+        <Particles
+          params={{particles: {number:{value: 200, density: {enable: true, value_area:1000,}}}}}
         >
-          Learn React
-        </a>
-      </header>
+
+        </Particles>
     </div>
   );
 }
