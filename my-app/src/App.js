@@ -1,17 +1,58 @@
-import Particles from 'react-particles';
+
 import './App.css';
+import NavBar from './components/NavBar';
 
 function App() {
   return (
+    
     <div className="App">
+    <NavBar/>
+      <h1>HELLO</h1>
+        
+        <h1>HELLO</h1><h1>HELLO</h1>
         <p>Hello everyone</p>
-
-
-        <Particles
-          params={{particles: {number:{value: 200, density: {enable: true, value_area:1000,}}}}}
-        >
-
-        </Particles>
+      <ul class="background">
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
     </div>
   );
 }
