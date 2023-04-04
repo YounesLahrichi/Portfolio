@@ -1,0 +1,9 @@
+.SpaceNavButtons{
+    height: 80px;
+    width: 200px;
+    display: flex;
+    justify-content: left;
+}
+
+
+  
