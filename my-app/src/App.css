@@ -9,13 +9,15 @@
   padding-left: 1rem;
 }
 
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.Card{
+  position: absolute;
+  top:0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  height: 200px;
+  width: 550px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

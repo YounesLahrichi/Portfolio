@@ -5,5 +5,51 @@
     justify-content: left;
 }
 
+.CardImage{
+    position: relative;
+    height: 150px;
+    width: 150px;
+}
 
-  
+.CardImage .CardImg{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #4070F4;
+}
+
+.Card{
+    border-radius: 25px;
+    background-color: #fff;
+    width: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageContent{
+    width: 35%;
+    float: left;
+    padding: 1rem;
+}
+
+.CardContent{
+    width: 65%;
+    float: right;
+    white-space: pre-wrap;
+    white-space: -moz-pre-wrap;
+    white-space: -pre-wrap;
+    white-space: -o-pre-wrap;
+    word-wrap: break-word;
+    padding: 1rem;
+}
+
+.Name{
+    margin: 0;
+}
+
+.Description{
+    margin-top: 0;
+    margin-bottom: 1rem;
+}

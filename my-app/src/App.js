@@ -1,18 +1,18 @@
 
 import './App.css';
 import NavBar from './components/NavBar';
+import StartPageInfoCard from './components/StartPageInfoCard';
 
 function App() {
   return (
     
-    <div className="App">
+    <div>
+      <div className="Card">
+        <StartPageInfoCard/>
+      </div>
       <div className = "NavBar">
       <NavBar/>
       </div>
-      <h1>HELLO</h1>
-        
-        <h1>HELLO</h1><h1>HELLO</h1>
-        <p>Hello everyone</p>
       <ul class="background">
         <li></li>
         <li></li>
