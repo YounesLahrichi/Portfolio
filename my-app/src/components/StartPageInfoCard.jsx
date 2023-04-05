@@ -17,7 +17,8 @@ function StartPageInfoCard(){
                 </div>
             </div>
             <div className = "CardContent">
-                    <h2 className = "Name"> Younes Lahrichi</h2>
+                    <h2 className = "Name">Hi i'm Younes Lahrichi</h2>
+                    <p className = "Description"> BLAHBLAHBALBJALkjflsadkjfaslkdfjaslkdfjasldfkjasldkfjaslkdfjaskld;fjasdlkfjasklfjaslfsdaf</p>
                     <p className = "Description"> BLAHBLAHBALBJALkjflsadkjfaslkdfjaslkdfjasldfkjasldkfjaslkdfjaskld;fjasdlkfjasklfjaslfsdaf</p>
                     <Button 
                     variant="contained" 
