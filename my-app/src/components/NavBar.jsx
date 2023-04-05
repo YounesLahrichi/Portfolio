@@ -7,7 +7,7 @@ import WorkIcon from '@mui/icons-material/Work';
 import './components.css';
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
+    
 
 const classes = makeStyles();
 
@@ -29,7 +29,8 @@ function NavBar(){
             onMouseOut={()=>setHover(false)}
             className={classes.iconHover}
             variant ="extended"
-            onClick={() => {console.log("i was clicked")}}>
+            onClick={() => {
+                console.log("i was clicked")}}>
                 {hover?("About Me"):(<InfoIcon />)}
             </Fab>
             </div>

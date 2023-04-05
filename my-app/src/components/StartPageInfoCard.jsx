@@ -7,8 +7,8 @@ import Button from '@mui/material/Button';
 function StartPageInfoCard(){
 
     return(
-        
         <div className="Card">
+            <div className = "StartInfo">
             <div className="ImageContent"> 
                 <span className="Overlay"></span>
                 <div className = "CardImage">
@@ -25,8 +25,10 @@ function StartPageInfoCard(){
                     className = "LearnButton"
                     onClick={() => {console.log("i was clicked")}}>About Me!</Button>
                 </div>
-
+            </div>
+            <div><h1>hello</h1></div>
         </div>
+        
         
     );
 }

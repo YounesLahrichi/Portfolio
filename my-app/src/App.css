@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: row;
   justify-content: left;
-  position: absolute;
+  position: fixed;
   top: 50%;
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
@@ -10,13 +10,10 @@
 }
 
 .Card{
-  position: absolute;
-  top:0;
-  bottom: 0;
-  left: 0;
-  right: 0;
   margin: auto;
-  height: 16rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  height: 200rem;
   width: 50rem;
 }
 

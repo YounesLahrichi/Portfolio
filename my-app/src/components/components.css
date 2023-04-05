@@ -1,14 +1,18 @@
 .SpaceNavButtons{
     height: 80px;
-    width: 200px;
+    width: 130px;
     display: flex;
     justify-content: left;
 }
 
+.StartInfo{
+    height: 10%;
+    width: 100%;
+}
 .CardImage{
     position: relative;
-    height: 13rem;
-    width: 13rem;
+    height: 17rem;
+    width: 17rem;
     padding-left: 1rem;
 }
 
@@ -23,27 +27,27 @@
 .Card{
     border-radius: 45px;
     background-color: #fff;
-    width: 55rem;
-    display: flex;
+    width: 70rem;
+    display: block;
     justify-content: center;
-    align-items: center;
 }
 
 .ImageContent{
     width: 30%;
     float: left;
-    padding: 3px;
+    padding: 2rem;
 }
 
 .CardContent{
     width: 70%;
     height: 90%;
-    float: right;
+    float: left;
     white-space: pre-wrap;
     word-wrap: break-word;
     inline-size: auto;
     overflow: auto;
-    padding: 1rem;
+    margin-top: 6rem;
+    margin-left: 2rem;
 }
 
 .Name{

@@ -10,9 +10,16 @@ function App() {
       <div className="Card">
         <StartPageInfoCard/>
       </div>
-      <div className = "NavBar">
-      <NavBar/>
+
+      <div>
+        <h1>HELLO</h1>
       </div>
+
+
+      <div className = "NavBar">
+        <NavBar/>
+      </div>
+      
       <ul class="background">
         <li></li>
         <li></li>
