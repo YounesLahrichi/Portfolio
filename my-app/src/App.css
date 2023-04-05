@@ -16,8 +16,8 @@
   left: 0;
   right: 0;
   margin: auto;
-  height: 200px;
-  width: 550px;
+  height: 16rem;
+  width: 50rem;
 }
 
 @media (prefers-reduced-motion: no-preference) {

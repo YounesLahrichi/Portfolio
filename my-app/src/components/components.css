@@ -7,8 +7,9 @@
 
 .CardImage{
     position: relative;
-    height: 150px;
-    width: 150px;
+    height: 13rem;
+    width: 13rem;
+    padding-left: 1rem;
 }
 
 .CardImage .CardImg{
@@ -20,28 +21,27 @@
 }
 
 .Card{
-    border-radius: 25px;
+    border-radius: 45px;
     background-color: #fff;
-    width: 550px;
+    width: 55rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .ImageContent{
-    width: 35%;
+    width: 30%;
     float: left;
-    padding: 1rem;
+    padding: 3px;
 }
 
 .CardContent{
-    width: 65%;
+    width: 70%;
     float: right;
     white-space: pre-wrap;
-    white-space: -moz-pre-wrap;
-    white-space: -pre-wrap;
-    white-space: -o-pre-wrap;
     word-wrap: break-word;
+    inline-size: auto;
+    overflow: auto;
     padding: 1rem;
 }
 
