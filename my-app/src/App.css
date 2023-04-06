@@ -1,4 +1,4 @@
-.NavBar{
+.NavBar {
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -9,9 +9,9 @@
   padding-left: 1rem;
 }
 
-.Card{
+.Card {
   margin: auto;
-  margin-top: 2rem;
+  margin-top: 25rem;
   margin-bottom: 2rem;
   height: 200rem;
   width: 50rem;
@@ -40,12 +40,12 @@
 
 @keyframes cube {
   from {
-      transform: scale(0) rotate(0deg) translate(-50%, -50%);
-      opacity: 1;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    opacity: 1;
   }
   to {
-      transform: scale(20) rotate(960deg) translate(-50%, -50%);
-      opacity: 0;
+    transform: scale(20) rotate(960deg) translate(-50%, -50%);
+    opacity: 0;
   }
 }
 
@@ -57,7 +57,7 @@
   left: 0;
   margin: 0;
   padding: 0;
-  background: #0040C1;
+  background: #0040c1;
   z-index: -1;
   overflow: hidden;
 }
