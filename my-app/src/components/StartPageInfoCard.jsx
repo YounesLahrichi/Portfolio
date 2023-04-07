@@ -1,14 +1,16 @@
-import selfie from "./whiteGUY.jpg";
+import selfie from "./Lahrichi_Younes.JPG";
 import resume from "./Resume_Lahrichi_Younes.pdf";
 import Fab from "@mui/material/Fab";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Tooltip from "@mui/material/Tooltip";
+import * as React from 'react';
+
 
 function StartPageInfoCard() {
   return (
-    <div className="Card">
+    <div className="CardMake">
       <div id="StartInfo" className="StartInfo">
         <div className="ImageContent">
           <span className="Overlay"></span>
@@ -66,20 +68,9 @@ function StartPageInfoCard() {
             {" "}
             BLAHBLAHBALBJALkjflsadkjfaslkdfjaslkdfjasldfkjasldkfjaslkdfjaskld;fjasdlkfjasklfjaslfsdaf
           </p>
-          <p className="Description">
-            {" "}
-            BLAHBLAHBALBJALkjflsadkjfaslkdfjaslkdfjasldfkjasldkfjaslkdfjaskld;fjasdlkfjasklfjaslfsdaf
-          </p>
+
         </div>
       </div>
-
-      <div id="Projects" className="Projects"></div>
-
-      <div id="Experience" className="Experience"></div>
-
-      <div id="ContactMe" className="ContactMe"></div>
-
-      <div id="CuteCats" className="CuteCats"></div>
     </div>
   );
 }

@@ -7,26 +7,15 @@ import WorkIcon from "@mui/icons-material/Work";
 import "./components.css";
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
+import StartPageInfoCard from "./StartPageInfoCard";
+import Projects from "./Projects.jsx";
+import Experience from "./Experience";
+import ContactMe from "./ContactMe";
+import CuteCats from "./CuteCats";
 
 const classes = makeStyles();
 
 function NavBar() {
-  const AboutMe = document.getElementById("StartInfo");
-  const doClickAboutMe = () => AboutMe.scrollIntoView({ behavior: "smooth" });
-
-  const Projects = document.getElementById("Projects");
-  const doClickProjects = () => Projects.scrollIntoView({ behavior: "smooth" });
-
-  const Experience = document.getElementById("Experience");
-  const doClickExperience = () =>
-    Experience.scrollIntoView({ behavior: "smooth" });
-
-  const ContactMe = document.getElementById("ContactMe");
-  const doClickContactMe = () =>
-    ContactMe.scrollIntoView({ behavior: "smooth" });
-
-  const CuteCats = document.getElementById("CuteCats");
-  const doClickCuteCats = () => CuteCats.scrollIntoView({ behavior: "smooth" });
 
   const [hover, setHover] = useState(false);
   const [hover1, setHover1] = useState(false);
@@ -34,8 +23,22 @@ function NavBar() {
   const [hover3, setHover3] = useState(false);
   const [hover4, setHover4] = useState(false);
 
+  const [home, setHome] = useState(true);
+  const [projects, setProjects] = useState(false);
+  const [experience, setExperience] = useState(false);
+  const [contactMe, setContactMe] = useState(false);
+  const [cuteCats, setcuteCats] = useState(false);
+
   return (
-    <div>
+    <div className="App">
+      <div className="CardLocation">
+        {home && <StartPageInfoCard/>}
+        {projects && <Projects/>}
+        {experience && <Experience/>}
+        {contactMe && <ContactMe/>}
+        {cuteCats && <CuteCats/>}
+      </div>
+      <div className="NavBarLocation">
       <div className="SpaceNavButtons">
         <Fab
           color="primary"
@@ -45,7 +48,11 @@ function NavBar() {
           className={classes.iconHover}
           variant="extended"
           onClick={() => {
-            doClickAboutMe();
+            setHome(true);
+            setProjects(false);
+            setExperience(false);
+            setContactMe(false);
+            setcuteCats(false);
             console.log("i was clicked");
           }}
         >
@@ -62,7 +69,11 @@ function NavBar() {
           className={classes.iconHover}
           variant="extended"
           onClick={() => {
-            doClickProjects();
+            setHome(false);
+            setProjects(true);
+            setExperience(false);
+            setContactMe(false);
+            setcuteCats(false);
             console.log("i was clicked");
           }}
         >
@@ -79,7 +90,11 @@ function NavBar() {
           className={classes.iconHover}
           variant="extended"
           onClick={() => {
-            doClickExperience();
+            setHome(false);
+            setProjects(false);
+            setExperience(true);
+            setContactMe(false);
+            setcuteCats(false);
             console.log("i was clicked");
           }}
         >
@@ -96,7 +111,11 @@ function NavBar() {
           className={classes.iconHover}
           variant="extended"
           onClick={() => {
-            doClickContactMe();
+            setHome(false);
+            setProjects(false);
+            setExperience(false);
+            setContactMe(true);
+            setcuteCats(false);
             console.log("i was clicked");
           }}
         >
@@ -113,12 +132,17 @@ function NavBar() {
           className={classes.iconHover}
           variant="extended"
           onClick={() => {
-            doClickCuteCats();
+            setHome(false);
+            setProjects(false);
+            setExperience(false);
+            setContactMe(false);
+            setcuteCats(true);
             console.log("i was clicked");
           }}
         >
           {hover4 ? "Cute Cats" : <PetsIcon />}
         </Fab>
+      </div>
       </div>
     </div>
   );
