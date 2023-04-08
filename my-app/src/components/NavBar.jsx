@@ -4,6 +4,7 @@ import AccountTreeIcon from "@mui/icons-material/AccountTree";
 import PetsIcon from "@mui/icons-material/Pets";
 import EmailIcon from "@mui/icons-material/Email";
 import WorkIcon from "@mui/icons-material/Work";
+import HomeIcon from '@mui/icons-material/Home';
 import "./components.css";
 import { useState } from "react";
 import { makeStyles } from "@material-ui/core/styles";
@@ -56,7 +57,7 @@ function NavBar() {
             console.log("i was clicked");
           }}
         >
-          {hover ? "About Me" : <InfoIcon />}
+          {hover ? "About Me" : <HomeIcon />}
         </Fab>
       </div>
 
