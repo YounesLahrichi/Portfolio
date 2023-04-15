@@ -2,22 +2,17 @@
 
 import IndividualCardV from './IndividualCardV';
 import dotaLogo from "./dota2.jpg"
-
+import FlipCard from "./FlipCard";
 
 function Experience() {
     return (
       <div className="CardMake">
+        
           <div className="ProjectsHeading">
             <h1>Experience</h1>
           </div>
           <div className="WrapperV">
-            <IndividualCardV
-            img = {dotaLogo}
-            title = "SWE Research Intern"
-            company = "GOOGKE"
-            time = "2020 - 0221"
-            description = "YUH YUH YUHUH YUH YH YUH YUH YH YUH YUY YUH YUH YH Y YUH YUH YH Y YUH YUH YH Y YUH YUH YH YUH YH Y YUH YUH YH Y YUH YUH YH Y YUH YUH YH Y Y YUH YUH YH Y YUH YUH YH Y YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YUH YUH YH YU YUH YUHaaa"
-            />
+            <FlipCard/>
             <IndividualCardV
             img = {dotaLogo}
             title = "FS Developer Intern"

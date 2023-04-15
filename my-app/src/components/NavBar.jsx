@@ -13,7 +13,7 @@ import Experience from "./Experience";
 import ContactMe from "./ContactMe";
 import CuteCats from "./CuteCats";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import FlipCard from "./FlipCard";
 
 const classes = makeStyles();
 

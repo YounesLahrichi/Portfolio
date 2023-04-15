@@ -1,5 +1,6 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
+import FlipCard from "./components/FlipCard";
 
 function App() {
   return (
