@@ -6,9 +6,11 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import DescriptionIcon from "@mui/icons-material/Description";
 import Tooltip from "@mui/material/Tooltip";
 import * as React from 'react';
-
+import { TransitionGroup, CSSTransition } from "react-transition-group";
+import { useState, useRef } from "react";
 
 function StartPageInfoCard() {
+  const transRef = useRef(null);
   return (
     <div className="CardMake">
       <div id="StartInfo" className="StartInfo">

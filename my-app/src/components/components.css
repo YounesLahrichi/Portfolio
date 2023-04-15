@@ -5,6 +5,14 @@
   justify-content: left;
 }
 
+.ContactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+  text-align: center;
+  padding: 2%;
+}
+
 .App{
   position: fixed;
   width: 100vw;
@@ -210,3 +218,13 @@
   width: 100%;
   object-fit: cover;
 }
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transform: rotateY(180);
+  transition: opacity 600ms;
+}
+

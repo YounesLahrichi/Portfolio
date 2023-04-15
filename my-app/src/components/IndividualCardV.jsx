@@ -1,7 +1,4 @@
 
-
-import dotaLogo from "./dota2.jpg"
-
 function IndividualCardV(props) {
     return (
 

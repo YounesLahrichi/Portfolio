@@ -1,6 +1,4 @@
 
-import dotaLogo from "./dota2.jpg"
-
 function IndividualCardH(props) {
     return (
 
