@@ -1,0 +1,230 @@
+.SpaceNavButtons {
+  height: 80px;
+  width: 130px;
+  display: flex;
+  justify-content: left;
+}
+
+.ContactForm{
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+  text-align: center;
+  padding: 2%;
+}
+
+.App{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+}
+
+.ProjectsHeading{
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+  text-align: center;
+}
+
+.NavBarLocation{
+  width: 10%;
+  float: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  position: fixed;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  padding-left: 1rem;
+}
+
+.CardLocation{
+  width: 100%;
+  height: 100%;
+  float: right;
+  padding: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ButtonLinks {
+  margin-top: 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.CardImage {
+  position: relative;
+  height: 17rem;
+  width: 17rem;
+  padding-left: 1rem;
+}
+
+.CardImage .CardImg {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid #4070f4;
+}
+
+.CardMake {
+  border-radius: 45px;
+  background-color: #fff;
+  width: 60%;
+  height: 50%;
+  box-shadow: 0 5px 50px #000000;
+  padding-bottom: 2rem;
+  overflow: hidden;
+}
+
+.ProjectCardMake {
+  border-radius: 45px;
+  background-color: #705d5d;
+  width: 90%;
+  margin-left: 5%;
+  height: 25%;
+  overflow: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+}
+
+
+.ImageContent {
+  width: 30%;
+  height: 100%;
+  float: left;
+  padding: 2rem;
+}
+
+.CardContent {
+  width: 70%;
+  height: 90%;
+  float: left;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  hyphens: auto;
+  inline-size: auto;
+  overflow: auto;
+  margin-top: 6rem;
+  margin-left: 2rem;
+}
+
+.Name {
+  margin: 0;
+}
+
+.Description {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+
+.Wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+  height: 90%;
+  overflow: whitespace;
+}
+
+.CardMain{
+  overflow: hidden;
+  box-shadow: 0 2px 20px grey;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  justify-content: space-between;
+  transition: transform 200ms ease-in;
+}
+
+.CardBody{
+  display: flex;
+  flex-direction: row;
+}
+
+.CardTitle{
+  padding-left: 10px;
+  margin-bottom: 0%;
+}
+
+.CardDescription{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Card_Image{
+  height: 100%;
+  width: 20%;
+  object-fit: cover;
+  float: left;
+}
+
+.Card_Content{
+  display: flex;
+  flex-direction: column;
+}
+
+.WrapperV{
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  justify-content:space-between;
+  padding-left: 5%;
+  padding-right: 5%;
+  padding-bottom: 10%;
+}
+
+.CardMainV{
+  overflow: hidden;
+  box-shadow: 0 2px 20px grey;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: transform 200ms ease-in;
+}
+
+.CardBodyV{
+  display: flex;
+  flex-direction: column;
+}
+
+.CardTitleV{
+  padding-left: 10px;
+  margin-bottom: 0%;
+}
+
+.CardDescriptionV{
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.Card_ImageV{
+  height: 12rem;
+  width: 100%;
+  object-fit: cover;
+}
+
+.my-node-enter {
+  opacity: 0;
+}
+.my-node-enter-active {
+  opacity: 1;
+  transform: rotateY(180);
+  transition: opacity 600ms;
+}
+
