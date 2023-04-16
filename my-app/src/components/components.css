@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
 .SpaceNavButtons {
   height: 80px;
   width: 130px;
@@ -12,6 +14,12 @@
   text-align: center;
   padding: 2%;
 }
+.ContactFormText{
+  display: flex;
+  flex-direction: column;
+  justify-content: Center;
+  text-align: center;
+}
 
 .App{
   position: fixed;
@@ -21,6 +29,7 @@
   left: 0;
   margin: 0;
   padding: 0;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 .ProjectsHeading{
@@ -28,6 +37,7 @@
   flex-direction: column;
   justify-content: Center;
   text-align: center;
+  font-family: Roboto, Helvetica, sans-serif;
 }
 
 .NavBarLocation{
@@ -75,28 +85,21 @@
   border: 4px solid #4070f4;
 }
 
+.StartInfo{
+  display: flex;
+  flex-direction: row;
+}
+
 .CardMake {
   border-radius: 45px;
-  background-color: #fff;
+  background-color: #ffffff;
   width: 60%;
   height: 50%;
   box-shadow: 0 5px 50px #000000;
   padding-bottom: 2rem;
   overflow: hidden;
+  font-family: Roboto, Helvetica, sans-serif;
 }
-
-.ProjectCardMake {
-  border-radius: 45px;
-  background-color: #705d5d;
-  width: 90%;
-  margin-left: 5%;
-  height: 25%;
-  overflow: auto;
-  display: flex;
-  flex-direction: row;
-  justify-content: left;
-}
-
 
 .ImageContent {
   width: 30%;
@@ -116,15 +119,22 @@
   overflow: auto;
   margin-top: 6rem;
   margin-left: 2rem;
+  font-family: Roboto, Helvetica, sans-serif;
+  padding-right: 2%;
 }
 
 .Name {
-  margin: 0;
+  margin: 0%;
+  margin-bottom: 4%;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 50px;
 }
 
 .Description {
   margin-top: 0;
   margin-bottom: 1rem;
+  font-family: Roboto, Helvetica, sans-serif;
+  font-size: 25px;
 }
 
 
@@ -184,39 +194,7 @@
   padding-left: 5%;
   padding-right: 5%;
   padding-bottom: 10%;
-}
-
-.CardMainV{
-  overflow: hidden;
-  box-shadow: 0 2px 20px grey;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: column;
-  width: 90%;
-  justify-content: space-between;
-  cursor: pointer;
-  transition: transform 200ms ease-in;
-}
-
-.CardBodyV{
-  display: flex;
-  flex-direction: column;
-}
-
-.CardTitleV{
-  padding-left: 10px;
-  margin-bottom: 0%;
-}
-
-.CardDescriptionV{
-  padding-left: 10px;
-  padding-right: 10px;
-}
-
-.Card_ImageV{
-  height: 12rem;
-  width: 100%;
-  object-fit: cover;
+  height: 86%;
 }
 
 .my-node-enter {
@@ -224,7 +202,201 @@
 }
 .my-node-enter-active {
   opacity: 1;
-  transform: rotateY(180);
   transition: opacity 600ms;
 }
 
+.fullWidth{
+  width: 100%;
+}
+
+.flippable-card-container{
+  width: 90%;
+  perspective: 1000px;
+}
+
+.flip-Card{
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+
+  box-shadow: 0px 0px 15px black;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 800ms;
+}
+
+.card-front,
+.card-back{
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 25px;
+
+  font-family: Roboto, Helvetica, sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  color: white;
+  text-shadow: 2px 2px 10px black;
+
+  position: absolute;
+
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+
+  user-select: none;
+  cursor: pointer;
+}
+
+.card-back{
+  font-family: Roboto, Helvetica, sans-serif;
+  background-color: #282929;
+  transform: rotateY(180deg);
+  justify-content: left;
+  display: flex;
+  flex-direction: column;
+  word-wrap: break-word;
+  align-items: start;
+  overflow: hidden;
+}
+
+.card-front{
+  background-color: #ffffff;
+  font-family: Roboto, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 0;
+}
+
+.flip-exit{
+  transform: rotateY(0deg);
+  -webkit-transform: rotateY(0);
+}
+
+.flip-exit-active{
+  transform: rotateY(180deg);
+  transition-timing-function: cubic-bezier(.57, .21,.69,1.25);
+}
+
+.flip-exit-done{
+  transform: rotateY(180deg);
+  transition: all 300ms;
+  transition: transform 300ms;
+}
+
+.flip-enter{
+  -webkit-transform: rotateY(180);
+  transform: rotateY(180deg);
+}
+
+.flip-enter-active{
+  transform: rotateY(0deg);
+  transition-timing-function: cubic-bezier(.57, .21,.69,1.25);
+}
+
+.flip-enter-done{
+  transform: rotateY(0deg);
+  transition: transform 300ms;
+}
+
+.flip_Card_ImageV{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  border-radius: 25px;
+}
+
+.card_front_heading{
+  font-family: Roboto, Helvetica, sans-serif;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  margin: 0;
+  padding-left: 2%;
+  padding-top: 2%;
+  overflow: hidden;
+}
+.card_front_role{
+  font-family: Roboto, Helvetica, sans-serif;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  margin: 0;
+  padding-left: 2%;
+  overflow: hidden;
+}
+
+.card_front_timeline{
+  font-family: Roboto, Helvetica, sans-serif;
+  width: 100%;
+  text-align: left;
+  z-index: 1;
+  margin: 0;
+  padding-left: 2%;
+  overflow: hidden;
+}
+
+.card_back_heading{
+  font-family: Roboto, Helvetica, sans-serif;
+  padding-left: 2%;
+  padding-top: 2%;
+  margin: 0;
+  
+}
+.card_back_role{
+  font-family: Roboto, Helvetica, sans-serif;
+  padding-left: 2%;
+  margin: 0;
+}
+.card_back_timeline{
+  font-family: Roboto, Helvetica, sans-serif;
+  padding-left: 2%;
+  margin: 0;
+}
+.card_back_description{
+  font-family: Roboto, Helvetica, sans-serif;
+  padding: 4%;
+  margin: 0;
+}
+
+.pageHeading{
+  font-family: Roboto, Helvetica, sans-serif;
+}
+
+.button {
+  background-color: #099;
+  color: white;
+  text-decoration: none;
+  border-radius: 60px;
+  height: 32px;
+  display: inline-flex;
+  align-items: center;
+  overflow:hidden;
+  width: auto;
+  max-width: 32px; /** I'm animating max-width because width needs to be auto, and auto can't be animated **/
+  -webkit-transition: max-width 0.5s;
+  transition: max-width 0.5s;
+}
+
+.button:hover {
+  max-width: 300px;
+}
+
+.icon {
+  font-family: "Font Awesome 5 Free";
+  font-size: 16px;
+  margin-right: 15px;
+  padding: 0px 8px;
+  display: flex;
+  align-items: center;
+}
+
+.text {
+  white-space: nowrap;
+  padding-right: 15px;
+}

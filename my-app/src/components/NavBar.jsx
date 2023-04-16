@@ -13,7 +13,8 @@ import Experience from "./Experience";
 import ContactMe from "./ContactMe";
 import CuteCats from "./CuteCats";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
-
+import FlipCard from "./FlipCard";
+import { WidthFull } from "@mui/icons-material";
 
 const classes = makeStyles();
 
@@ -68,7 +69,6 @@ function NavBar() {
       <div className="NavBarLocation">
       <div className="SpaceNavButtons">
         <Fab
-          color="primary"
           aria-label="aboutMe"
           onMouseOver={() => setHover(true)}
           onMouseOut={() => setHover(false)}
@@ -92,7 +92,6 @@ function NavBar() {
 
       <div className="SpaceNavButtons">
         <Fab
-          color="primary"
           aria-label="projects"
           onMouseOver={() => setHover1(true)}
           onMouseOut={() => setHover1(false)}
@@ -116,7 +115,6 @@ function NavBar() {
 
       <div className="SpaceNavButtons">
         <Fab
-          color="primary"
           aria-label="experience"
           onMouseOver={() => setHover2(true)}
           onMouseOut={() => setHover2(false)}
@@ -140,7 +138,6 @@ function NavBar() {
 
       <div className="SpaceNavButtons">
         <Fab
-          color="primary"
           aria-label="contactMe"
           onMouseOver={() => setHover3(true)}
           onMouseOut={() => setHover3(false)}
@@ -164,7 +161,6 @@ function NavBar() {
 
       <div className="SpaceNavButtons">
         <Fab
-          color="primary"
           aria-label="cuteCats"
           onMouseOver={() => setHover4(true)}
           onMouseOut={() => setHover4(false)}

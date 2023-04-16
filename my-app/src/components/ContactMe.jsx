@@ -22,15 +22,23 @@ function ContactMe() {
   };
     return (
       <div className="CardMake">
-        <div id="StartInfo" className="StartInfo">
           <div className="ContactForm">
-            <h1>Contact Me</h1>
-            <form ref={form} onSubmit={sendEmail} className="ContactForm">
-              <TextField id="outlined-basic" label="Name" variant="outlined" name="user_name" margin='normal'/>
-              <TextField id="outlined-basic" label="Email" variant="outlined" name="user_email" margin='normal'/>
-              <TextField id="outlined-basic" label="Message" variant="outlined" name="user_name" multiline={true} rows={6} margin='normal'/>
-              <Button variant="contained" type="submit" value="Send" fullWidth={false}>Submit</Button>
-            </form> 
+            <h1 className="pageHeading">Contact Me</h1>
+            <div className="ContactFormText">
+              <form ref={form} onSubmit={sendEmail}>
+                <div className="fullWidth">
+                <TextField style = {{width: '80%'}} id="outlined-basic" label="Name" variant="outlined" name="user_name" margin='normal'/>
+                </div>
+                <div className="fullWidth">
+                <TextField style = {{width: '80%'}} id="outlined-basic" label="Email" variant="outlined" name="user_email" margin='normal'/>
+                </div>
+                <div className="fullWidth">
+                <TextField style = {{width: '80%'}} id="outlined-basic" label="Message" variant="outlined" name="user_name" multiline={true} rows={6} margin='normal'/>
+                </div>
+                <div className="fullWidth">
+                <Button style = {{width: 100}} variant="contained" type="submit" value="Send" fullWidth={false}>Submit</Button>
+                </div>
+              </form> 
           </div>           
         </div>
       </div>
