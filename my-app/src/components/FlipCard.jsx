@@ -27,6 +27,8 @@ function FlipCard(props) {
                     <div className="card-front">
                         <img src={props.backgroundFront} className="flip_Card_ImageV"/>
                         <h2 className="card_front_heading">{props.frontTitle}</h2>
+                        <h3 className="card_front_role">{props.frontRole}</h3>
+                        <h4 className="card_front_timeline">{props.frontTimeline}</h4>
                     </div>
                 </div>
             </CSSTransition>

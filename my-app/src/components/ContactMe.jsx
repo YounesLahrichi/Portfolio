@@ -22,9 +22,8 @@ function ContactMe() {
   };
     return (
       <div className="CardMake">
-        <div id="StartInfo" className="StartInfo">
           <div className="ContactForm">
-            <h1>Contact Me</h1>
+            <h1 className="pageHeading">Contact Me</h1>
             <div className="ContactFormText">
               <form ref={form} onSubmit={sendEmail}>
                 <div className="fullWidth">
@@ -40,7 +39,6 @@ function ContactMe() {
                 <Button style = {{width: 100}} variant="contained" type="submit" value="Send" fullWidth={false}>Submit</Button>
                 </div>
               </form> 
-            </div>
           </div>           
         </div>
       </div>
