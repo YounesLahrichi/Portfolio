@@ -15,6 +15,8 @@ import CuteCats from "./CuteCats";
 import { TransitionGroup, CSSTransition } from "react-transition-group";
 import FlipCard from "./FlipCard";
 import { WidthFull } from "@mui/icons-material";
+import EngineeringIcon from '@mui/icons-material/Engineering';
+import AutoAwesomeMotionIcon from '@mui/icons-material/AutoAwesomeMotion';
 
 const classes = makeStyles();
 
@@ -42,13 +44,211 @@ function NavBar() {
 
   return (
     <div className="App">
+      <div className="NavButtonLocations">
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(true);
+                setProjects(false);
+                setExperience(false);
+                setContactMe(false);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><HomeIcon fontSize="large"/></span>
+                <span class="text">About Me</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async() => {
+                setHome(false);
+                setProjects(true);
+                setExperience(false);
+                setContactMe(false);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><AutoAwesomeMotionIcon fontSize="large"/></span>
+                <span class="text">Projects</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(false);
+                setProjects(false);
+                setExperience(true);
+                setContactMe(false);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><EngineeringIcon fontSize="large"/></span>
+                <span class="text">Experience</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(false);
+                setProjects(false);
+                setExperience(false);
+                setContactMe(true);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><EmailIcon fontSize="large"/></span>
+                <span class="text">Contact Me</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(false);
+                setProjects(false);
+                setExperience(false);
+                setContactMe(false);
+                setcuteCats(true);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><PetsIcon fontSize="large"/></span>
+                <span class="text">CuteCats</span>
+              </a>
+            </div>
+
+           
+          </div>
       <CSSTransition
-      transRef={transRef}
-      in={toggle}
-      timeout={400}
-      classNames="my-node"
+        transRef={transRef}
+        in={toggle}
+        timeout={400}
+        classNames="my-node"
       >
         <div className="CardLocation">
+          {/* <div className="NavButtonLocations">
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(true);
+                setProjects(false);
+                setExperience(false);
+                setContactMe(false);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><HomeIcon fontSize="large"/></span>
+                <span class="text">About Me</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async() => {
+                setHome(false);
+                setProjects(true);
+                setExperience(false);
+                setContactMe(false);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><AutoAwesomeMotionIcon fontSize="large"/></span>
+                <span class="text">Projects</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(false);
+                setProjects(false);
+                setExperience(true);
+                setContactMe(false);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><EngineeringIcon fontSize="large"/></span>
+                <span class="text">Experience</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(false);
+                setProjects(false);
+                setExperience(false);
+                setContactMe(true);
+                setcuteCats(false);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><EmailIcon fontSize="large"/></span>
+                <span class="text">Contact Me</span>
+              </a>
+            </div>
+            <div className="SpaceNavButtons">
+              <a 
+              href="#" 
+              class="button"
+              onClick={async () => {
+                setHome(false);
+                setProjects(false);
+                setExperience(false);
+                setContactMe(false);
+                setcuteCats(true);
+                setToggle(true);
+                await delay(400);
+                setToggle(false)
+                console.log("i was clicked");
+              }}>
+                <span class="icon"><PetsIcon fontSize="large"/></span>
+                <span class="text">CuteCats</span>
+              </a>
+            </div>
+
+           
+          </div> */}
           {home && <StartPageInfoCard/>}
           {projects && <Projects/>}
           {experience && <Experience/>}
@@ -56,132 +256,7 @@ function NavBar() {
           {cuteCats && <CuteCats/>}
       </div>
       </CSSTransition>
-      <CSSTransition
-      transRef={transRef}
-      in={projects}
-      timeout={200}
-      classNames="my-node"
-      >
-        <div className="CardLocation">
-          {projects && <Projects/>}
-      </div>
-      </CSSTransition>
-      <div className="NavBarLocation">
-      <div className="SpaceNavButtons">
-        <Fab
-          aria-label="aboutMe"
-          onMouseOver={() => setHover(true)}
-          onMouseOut={() => setHover(false)}
-          className={classes.iconHover}
-          variant="extended"
-          onClick={async () => {
-            setHome(true);
-            setProjects(false);
-            setExperience(false);
-            setContactMe(false);
-            setcuteCats(false);
-            setToggle(true);
-            await delay(400);
-            setToggle(false)
-            console.log("i was clicked");
-          }}
-        >
-          {hover ? "About Me" : <HomeIcon />}
-        </Fab>
-      </div>
 
-      <div className="SpaceNavButtons">
-        <Fab
-          aria-label="projects"
-          onMouseOver={() => setHover1(true)}
-          onMouseOut={() => setHover1(false)}
-          className={classes.iconHover}
-          variant="extended"
-          onClick={async() => {
-            setHome(false);
-            setProjects(true);
-            setExperience(false);
-            setContactMe(false);
-            setcuteCats(false);
-            setToggle(true);
-            await delay(400);
-            setToggle(false)
-            console.log("i was clicked");
-          }}
-        >
-          {hover1 ? "Projects" : <AccountTreeIcon />}
-        </Fab>
-      </div>
-
-      <div className="SpaceNavButtons">
-        <Fab
-          aria-label="experience"
-          onMouseOver={() => setHover2(true)}
-          onMouseOut={() => setHover2(false)}
-          className={classes.iconHover}
-          variant="extended"
-          onClick={async () => {
-            setHome(false);
-            setProjects(false);
-            setExperience(true);
-            setContactMe(false);
-            setcuteCats(false);
-            setToggle(true);
-            await delay(400);
-            setToggle(false)
-            console.log("i was clicked");
-          }}
-        >
-          {hover2 ? "Experience" : <WorkIcon />}
-        </Fab>
-      </div>
-
-      <div className="SpaceNavButtons">
-        <Fab
-          aria-label="contactMe"
-          onMouseOver={() => setHover3(true)}
-          onMouseOut={() => setHover3(false)}
-          className={classes.iconHover}
-          variant="extended"
-          onClick={async () => {
-            setHome(false);
-            setProjects(false);
-            setExperience(false);
-            setContactMe(true);
-            setcuteCats(false);
-            setToggle(true);
-            await delay(400);
-            setToggle(false)
-            console.log("i was clicked");
-          }}
-        >
-          {hover3 ? "Contact Me" : <EmailIcon />}
-        </Fab>
-      </div>
-
-      <div className="SpaceNavButtons">
-        <Fab
-          aria-label="cuteCats"
-          onMouseOver={() => setHover4(true)}
-          onMouseOut={() => setHover4(false)}
-          className={classes.iconHover}
-          variant="extended"
-          onClick={async () => {
-            setHome(false);
-            setProjects(false);
-            setExperience(false);
-            setContactMe(false);
-            setcuteCats(true);
-            setToggle(true);
-            await delay(400);
-            setToggle(false)
-            console.log("i was clicked");
-          }}
-        >
-          {hover4 ? "Cute Cats" : <PetsIcon />}
-        </Fab>
-      </div>
-      </div>
     </div>
   );
 }
