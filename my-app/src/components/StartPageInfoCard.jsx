@@ -70,19 +70,21 @@ function StartPageInfoCard() {
             onInit={(typewriter)=> {
 
             typewriter
-            .typeString("Hi There! I'm Younes Lahrichi!")
+            .typeString("Hello World!")
             .start();
             }}
             /></h1>
           <p className="Description">
             {" "}
-            A paragraph should ideally be a smooth, succinct experience that goes through a bit of exposition, illustrates an idea, sums up the point, and primes the reader for the next paragraph.
-
-Ideally.
-
-In practice, a writer can get too caught up in all the things they have to say and fail to organize it all into bits an ordinary human being would be able to digest. The end result is a huge run-on paragraph that makes it difficult to recall the original point of it if there was one in the first place. The reader's eyes glaze over and all they see is a wall of text.
-
-This afflicts all written media, but it is particularly infamous for its effect on Comic Books. One of the first things learned in comics is how to use dialogue bubbles effectively; a writer not allocating space carefully will end up covering their panel with a bunch of text and white space. Eventually, the reader will realize that they're primarily looking at plain text rather than the vivid form of visual storytelling that comic books are famed for. TL;DR indeed.          </p>
+            Hey there, My name is Younes Lahrichi. I am currently a Computer Engineering senior who is also pursuing minors in Computer Science and Software Engineering, Mathematics, and Data Science at the University of Washington. I am also proud to say that I have been a Dean's list recipient for a number of quarters throughout my education.
+            {'\n'}{'\n'}
+             It all started when I was 11 years old, I was developing small games on Scratch. I was able to not only understand how some of my favorite games worked, but make some new games that applied the same fundamentals that I learned.
+            {'\n'}{'\n'}
+            This led me to choose a path in education that aligned with my interests. Since then I have been able to take countless courses that challenged me intellectually such as Data Structures and Algorithms, Operating Systems, and Embedded Systems. 
+            {'\n'}{'\n'}
+            Although my major is a mix of Computer Science and Electrical Engineering, my interests lean more toward the computer science. To supplement any of my deficiencies in this field I have done countless side projects and jumped at any work experience opportunities.
+            {'\n'}{'\n'}
+            Through these different projects I have gained a unique set of skills. Most notably Java, JavaScript, TypeScript, HTML, CSS, GIT, React, SQL Express.js, Node.js, Postman. </p>
 
         </div>
       </div>

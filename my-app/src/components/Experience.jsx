@@ -1,4 +1,3 @@
-import dotaLogo from "./dota2.jpg"
 import FlipCard from "./FlipCard";
 import tmobileLogo from "./T-Mobile.webp";
 import selLogo from "./sel.png"
